@@ -29,14 +29,13 @@
 
 	qcom,ca-target-pwrlevel = <4>;
 	qcom,initial-pwrlevel = <7>;
-	/delete-node/qcom,gpu-pwrlevels;
 
 	/* Power levels */
-	qcom,gpu-pwrlevels {
+	qcom,gpu-pwrlevels-oc {
 		#address-cells = <1>;
 		#size-cells = <0>;
 
-		compatible = "qcom,gpu-pwrlevels";
+		compatible = "qcom,gpu-pwrlevels-oc";
 		/* TURBO LD0 */
 		qcom,gpu-pwrlevel@0 {
 			reg = <0>;
